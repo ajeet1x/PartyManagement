@@ -1,0 +1,962 @@
+
+/* ==============================
+   BODY
+================================= */
+
+#body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+#tentLink {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ==============================
+   HEADER
+================================= */
+
+#header {
+    background-color: #ffffff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+#logo {
+    margin: 0;
+    color: #1d3557;
+    font-size: 28px;
+}
+
+#navbar {
+    display: flex;
+    gap: 25px;
+}
+
+#homeLink {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#servicesLink {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#galleryLink {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#aboutLink {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#contactLink {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#homeLink:hover {
+    color: #e09f00;
+}
+
+#servicesLink:hover {
+    color: #e09f00;
+}
+
+#galleryLink:hover {
+    color: #e09f00;
+}
+
+#aboutLink:hover {
+    color: #e09f00;
+}
+
+#contactLink:hover {
+    color: #e09f00;
+}
+
+
+/* ==============================
+   HERO SECTION
+================================= */
+#hero {
+    background-color: #1d3557;
+    color: white;
+    padding: 70px 30px 70px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 340px;
+}
+
+#heroContent {
+    width: 50%;
+}
+
+#heroImageContainer {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#heroImage {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 100%;
+	margin-right: 30px;
+}
+#heroImageContainer {
+
+    width: 45%;
+    text-align: center;
+
+}
+
+
+#bookNowButton {
+    padding: 14px 28px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f4b400;
+    color: #ffffff;
+    border: 2px solid #f4b400;
+}
+
+#callNowButton {
+    padding: 14px 28px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+#bookNowButton:hover {
+    background-color: #d99d00;
+}
+
+#callNowButton:hover {
+    background-color: white;
+    color: #1d3557;
+}
+
+
+/* ==============================
+   SERVICES
+================================= */
+
+#services {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#servicesTitle {
+    font-size: 36px;
+    color: #1d3557;
+    margin-bottom: 30px;
+}
+
+
+/* TENT */
+
+#tentService {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 0px 0px 10px 0px ;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#tentService:hover {
+    box-shadow: 0 7px 18px #bbbbbb;
+    transform: translateY(-3px);
+}
+
+#tentServiceImage {
+    width: 290px;
+    height: 180px;
+    object-fit: cover;
+}
+
+#tentTitle {
+    color: #1d3557;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#tentDescription {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+
+#jaimalService {
+
+    width: 300px;
+
+    height: 300px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 10px;
+
+    padding: 0px 0px 10px 0px;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    text-align: center;
+
+}
+
+#jaimalService:hover {
+
+    box-shadow: 0 7px 18px #bbbbbb;
+
+    transform: translateY(-3px);
+
+}
+
+#jaimalImage {
+
+    width: 290px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+}
+
+#jaimalTitle {
+
+    color: #1d3557;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+#jaimalDescription {
+
+    color: #666666;
+
+    font-size: 15px;
+
+}
+#jaimalImage {
+    width: 290px !important;
+    height: 180px !important;
+    object-fit: cover;
+}
+
+/* stage */
+
+#stageService {
+
+    width: 300px;
+
+    height: 300px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 10px;
+
+    padding: 0px 0px 10px 0px;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    text-align: center;
+
+}
+
+#stageService:hover {
+
+    box-shadow: 0 7px 18px #bbbbbb;
+
+    transform: translateY(-3px);
+
+}
+
+#stageImage {
+
+    width: 290px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+}
+
+#stageTitle {
+
+    color: #1d3557;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+#stageDescription {
+
+    color: #666666;
+
+    font-size: 15px;
+
+}
+#stageImage {
+	width: 290px !important;
+	height: 180px !important;
+	object-fit: cover;
+
+}
+
+/* CHAIRS */
+#chairsService {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+}
+#chairsService:hover {
+    box-shadow: 0 7px 18px #bbbbbb;
+    transform: translateY(-3px);
+}
+
+#chairsImage {
+
+    width: 290px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+}
+
+#chairsTitle {
+
+    color: #1d3557;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+#chairsDescription {
+
+    color: #666666;
+
+    font-size: 15px;
+
+}
+
+/* LIGHTING */
+
+#lightingService {
+
+    width: 300px;
+
+    height: 300px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 10px;
+
+    padding: 0px 0px 10px 0px;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    text-align: center;
+
+}
+
+#lightingService:hover {
+
+    box-shadow: 0 7px 18px #bbbbbb;
+
+    transform: translateY(-3px);
+
+}
+
+#lightingImage {
+
+    width: 290px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+}
+
+#lightingTitle {
+
+    color: #1d3557;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+#lightingDescription {
+
+    color: #666666;
+    font-size: 15px;
+
+}
+
+
+
+/* PICKUP */
+#pickupService {
+
+    width: 300px;
+
+    height: 300px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 10px;
+
+    padding: 0px 0px 10px 0px;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    text-align: center;
+
+}
+
+#pickupService:hover {
+
+    box-shadow: 0 7px 18px #bbbbbb;
+
+    transform: translateY(-3px);
+
+}
+
+#pickupImage {
+
+    width: 290px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+}
+
+#pickupTitle {
+    color: #1d3557;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#pickupDescription {
+    color: #666666;
+    font-size: 15px;
+}
+
+/* ==============================
+   WHY CHOOSE US
+================================= */
+
+#whyChooseUs {
+    background-color: #f0f3f7;
+    padding: 10px 60px;
+    text-align: center;
+}
+
+#whyTitle {
+    color: #1d3557;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+#qualityService {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333333;
+    box-shadow: 0 3px 10px #dddddd;
+}
+
+#affordablePrice {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333333;
+    box-shadow: 0 3px 10px #dddddd;
+}
+
+#completeSetup {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333333;
+    box-shadow: 0 3px 10px #dddddd;
+}
+
+#experiencedTeam {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333333;
+    box-shadow: 0 3px 10px #dddddd;
+}
+
+
+/* ==============================
+   GALLERY
+================================= */
+
+#gallery {
+    background-color: white;
+    padding: 20px 60px;
+    text-align: center;
+}
+
+#galleryTitle {
+    color: #1d3557;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+#tentImage {
+    width: 21%;
+    height: 220px;
+    margin: 1%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
+}
+
+#jaimalImage {
+    width: 21%;
+    height: 220px;
+    margin: 1%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
+}
+
+#stageImage {
+    width: 21%;
+    height: 220px;
+    margin: 1%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
+}
+
+#decorationImage {
+    width: 21%;
+    height: 220px;
+    margin: 1%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
+}
+
+#tentImage:hover {
+    opacity: 0.85;
+}
+
+#jaimalImage:hover {
+    opacity: 0.85;
+}
+
+#stageImage:hover {
+    opacity: 0.85;
+}
+
+#decorationImage:hover {
+    opacity: 0.85;
+}
+
+
+/* ==============================
+   ABOUT
+================================= */
+
+#about {
+    background-color: #fff8e6;
+    padding: 70px 60px;
+    text-align: center;
+}
+
+#aboutTitle {
+    color: #1d3557;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+#aboutDescription {
+    max-width: 750px;
+    margin: auto;
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   BOOKING
+================================= */
+
+#message1
+{
+	color:green !important;
+}
+#message2
+{
+	color:red !important;
+	font-size: 10px;
+}
+#booking {
+    background-color: #1d3557;
+    padding: 70px 60px;
+    text-align: center;
+}
+
+#bookingTitle {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+#bookingForm {
+    width: 70%;
+    margin: auto;
+}
+
+#customerName {
+    width: 42%;
+    padding: 15px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#mobileNumber {
+    width: 42%;
+    padding: 15px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#eventDate {
+    width: 42%;
+    padding: 15px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#eventLocation {
+    width: 42%;
+    padding: 15px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#submitBooking {
+    display: block;
+    margin: 20px auto 0;
+    padding: 14px 30px;
+    background-color: #f4b400;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitBooking:hover {
+    background-color: #d99d00;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+#footer {
+    background-color: #101820;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+#contactNumber {
+    font-size: 17px;
+}
+
+#whatsapp {
+    color: #5ee06b;
+    font-weight: bold;
+}
+
+#copyright {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+    #header {
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    #navbar {
+        display: block;
+    }
+
+    #homeLink {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #servicesLink {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #galleryLink {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #aboutLink {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #contactLink {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #hero {
+        padding: 70px 25px;
+    }
+
+    #heroTitle {
+        font-size: 38px;
+    }
+
+    #services {
+        padding: 50px 20px;
+    }
+
+    #tentService {
+        width: 80%;
+    }
+
+    #jaimalService {
+        width: 80%;
+    }
+
+    #stageService {
+        width: 80%;
+    }
+
+    #chairsService {
+        width: 80%;
+    }
+
+    #lightingService {
+        width: 80%;
+    }
+
+    #pickupService {
+        width: 80%;
+    }
+
+    #whyChooseUs {
+        padding: 50px 20px;
+    }
+
+    #qualityService {
+        width: 70%;
+    }
+
+    #affordablePrice {
+        width: 70%;
+    }
+
+    #completeSetup {
+        width: 70%;
+    }
+
+    #experiencedTeam {
+        width: 70%;
+    }
+
+    #gallery {
+        padding: 50px 20px;
+    }
+
+    #tentImage {
+        width: 90%;
+        margin: 10px;
+    }
+
+    #jaimalImage {
+        width: 90%;
+        margin: 10px;
+    }
+
+    #stageImage {
+        width: 90%;
+        margin: 10px;
+    }
+
+    #decorationImage {
+        width: 90%;
+        margin: 10px;
+    }
+
+    #booking {
+        padding: 50px 20px;
+    }
+
+    #bookingForm {
+        width: 100%;
+    }
+
+    #customerName {
+        width: 80%;
+        margin: 8px;
+    }
+
+    #mobileNumber {
+        width: 80%;
+        margin: 8px;
+    }
+
+    #eventDate {
+        width: 80%;
+        margin: 8px;
+    }
+
+    #eventLocation {
+        width: 80%;
+        margin: 8px;
+    }
+}

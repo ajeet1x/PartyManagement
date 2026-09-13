@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head id="head">
+
+    <meta charset="UTF-8" id="charset">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+          id="viewport">
+
+    <title id="title">Party Management</title>
+
+    <link rel="stylesheet"
+          href="booking.css"
+          id="css">
+
+</head>
+
+<body id="body">
+
+    <!-- Header -->
+    <header id="header">
+
+        <h1 id="logo">
+            [ OP Tent House ]
+        </h1>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero">
+
+        <div id="heroContent">
+
+            <h1 id="heroTitle">
+                Make Your Event Special
+            </h1>
+
+            <p id="heroDescription">
+                We provide Tent, Jaimal, Stage Decoration,
+                Lighting and complete event setup.
+            </p>
+
+        </div>
+
+
+        <!-- Booking Form -->
+        <div id="heroImageContainer">
+
+            <!-- Message FORM KE UPAR -->
+
+
+            <form id="bookingForm">
+
+                <h2 id="formTitle">
+                    Book Your Event
+                </h2>
+            <p id="message1"></p>
+			<p id="message2"></p>
+
+                <label id="nameLabel">
+                    Name
+                </label>
+
+                <input type="text"
+                       id="name"
+                       placeholder="Enter your name">
+
+
+                <label id="addressLabel">
+                    Address
+                </label>
+
+                <textarea id="address"
+                          placeholder="Enter your address"></textarea>
+
+
+                <label id="mobileLabel">
+                    Mobile Number
+                </label>
+
+                <input type="number"
+                       id="mobile"
+                       placeholder="Enter mobile number">
+
+
+                <button type="submit"
+                        id="submitButton">
+                    Book Now
+                </button>
+
+            </form>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+                    id="axios">
+            </script>
+
+
+            <script id="script">
+                document.getElementById("bookingForm").addEventListener("submit", function(event)
+                {
+                    event.preventDefault();
+
+                    let name = document.getElementById("name").value;
+                    let address = document.getElementById("address").value;
+                    let mobile = document.getElementById("mobile").value;
+					
+                    axios.post("http://localhost:1111/add", {
+
+                        name: name,
+
+                        address: address,
+
+                        number: mobile
+
+                    })
+
+                    .then(response => {
+						if(response.data == "Booking Successfully Added")
+						    {
+						        document.getElementById("message2").innerHTML = "";
+
+						        document.getElementById("message1").innerHTML =
+						            response.data;
+						    }
+						    else
+						    {
+						        document.getElementById("message1").innerHTML = "";
+
+						        document.getElementById("message2").innerHTML =
+						            response.data;
+						    }
+
+                    })
+
+                    .catch(error => {
+
+                        document.getElementById("message2").innerHTML =
+                            "Something went wrong";
+							document.getElementById("message1").innerHTML = "";
+
+                    });
+
+                });
+
+            </script>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
