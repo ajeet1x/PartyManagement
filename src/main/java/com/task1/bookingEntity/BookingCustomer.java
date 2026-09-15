@@ -1,11 +1,12 @@
 package com.task1.bookingEntity;
 
-import java.io.Serial;
+import java.awt.PageAttributes.MediaType;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -70,6 +71,27 @@ class ControllerLayer
 		 {
 			 return "Enter Valid Name";
 		 }
+	 }
+	 
+	 @GetMapping("/getAll")
+	 public String getAllData() {
+
+	     List<BookingCustomer> all = repo.findAll();
+
+	     String s1 = "<pre>";
+
+	     for (BookingCustomer a : all) {
+
+	         s1 += "ID      :       " + a.getId() + "\n";
+	         s1 += "Name    :       " + a.getName() + "\n";
+	         s1 += "Address :       " + a.getAddress() + "\n";
+	         s1 += "Mobile  :       " + a.getNumber() + "\n";
+	         s1 += "-------------------------------------\n";
+	     }
+
+	     s1 += "</pre>";
+
+	     return s1;
 	 }
 }
 
