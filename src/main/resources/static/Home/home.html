@@ -294,7 +294,7 @@
 				            let address = document.getElementById("eventLocation").value;
 				            let mobile = document.getElementById("mobileNumber").value;
 
-				            axios.post("http://localhost:1111/add", {
+				            axios.post("/add",  {
 				                name: name,
 				                address: address,
 				                number: mobile
